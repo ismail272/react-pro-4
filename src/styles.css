@@ -31,18 +31,16 @@
     background-color: #22222e;
     margin-bottom: 20px;
     width: 250px;
-    height: 200px;
     border-radius: 10px;
     opacity: 0.6;
     transition: 0.5s;
 }
 
 .img:hover {
-    box-shadow: 0 20px 40px rgb(0 0 0);
-    transition: 1s;
+    box-shadow: 0 20px 20px rgb(0 0 0);
     border: none;
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .img img {
@@ -77,4 +75,9 @@ button:hover {
     font-size: 30px;
     color: silver;
     font-weight: 600;
+}
+
+.title {
+    color: silver;
+    padding: 20px;
 }
