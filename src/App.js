@@ -27,8 +27,6 @@ function App() {
                 <div className="img">
                     <div><button onClick={() => handleDelete(todo.id)}>✕</button></div>
                     <div className="imgCard"><img src={todo.thumbnailUrl} /></div>
-
-                    <div className="block">wdw</div>
                 </div>
             )
           })

@@ -71,13 +71,6 @@ button:hover {
     color: red;
 }
 
-.block {
-    display: none;
-}
-
-.block:hover {
-    display: flex;
-}
 
 .load {
     margin: auto ;
