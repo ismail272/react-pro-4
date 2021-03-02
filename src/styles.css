@@ -1,0 +1,60 @@
+.body {
+    background-color: silver;
+}
+
+
+.App {
+    width: 100%;
+    margin: auto;
+}
+
+.header {
+   text-align: center;
+    padding: 20px 0px ;
+    font-size: 2rem;
+    border-bottom: 1px solid silver;
+    color: silver;
+    margin-bottom: 20px;
+}
+
+.imgBlock {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.imgBlock img {
+    padding: 20px 0px;
+
+}
+
+.img {
+    position: relative;
+    background-color: #22222e;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 15px 35px rgb(0 0 0);
+    border-radius: 10px;
+}
+
+.img img {
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    color: silver;
+    font-weight: bold;
+}
