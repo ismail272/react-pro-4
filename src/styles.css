@@ -25,36 +25,63 @@
     margin: auto;
 }
 
-.imgBlock img {
-    padding: 20px 0px;
 
-}
 
 .img {
-    position: relative;
     background-color: #22222e;
     margin-bottom: 20px;
     width: 250px;
     height: 200px;
-    box-shadow: 0 15px 35px rgb(0 0 0);
     border-radius: 10px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.img:hover {
+    box-shadow: 0 20px 40px rgb(0 0 0);
+    transition: 1s;
+    border: none;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .img img {
     border-radius: 50%;
-    margin-left: 50px;
+
 }
 
+.imgCard {
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
 
 button {
     background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 16px;
-    position: absolute;
-    top: 10px;
-    right: 5px;
     color: silver;
+    font-size: 16px;
     font-weight: bold;
+}
+
+button:hover {
+    color: red;
+}
+
+.block {
+    display: none;
+}
+
+.block:hover {
+    display: flex;
+}
+
+.load {
+    margin: auto ;
+    font-size: 30px;
+    color: silver;
+    font-weight: 600;
 }

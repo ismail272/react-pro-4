@@ -19,13 +19,16 @@ function App() {
 
   return (
     <div className="App">
-      <div className="header">Список списка:</div>
-      <div className="imgBlock">{loading ? 'Жди...' : (
+      <div className="header">Список всех списков:</div>
+        <div className="imgBlock">{loading ?
+            <div className="load">Если ты понизил скорость, то наверное видешь этот текст :)</div> : (
           todos.map((todo) => {
             return (
                 <div className="img">
-                  <img src={todo.thumbnailUrl} />
-                  <button onClick={() => handleDelete(todo.id)}>✕</button>
+                    <div><button onClick={() => handleDelete(todo.id)}>✕</button></div>
+                    <div className="imgCard"><img src={todo.thumbnailUrl} /></div>
+
+                    <div className="block">wdw</div>
                 </div>
             )
           })
