@@ -5,7 +5,7 @@
 
 .App {
     width: 100%;
-    margin: auto;
+    margin: 50px auto;
 }
 
 .header {
@@ -27,7 +27,7 @@
 
 
 
-.img {
+.Card {
     background-color: #22222e;
     margin-bottom: 20px;
     width: 250px;
@@ -36,14 +36,14 @@
     transition: 0.5s;
 }
 
-.img:hover {
+.Card:hover {
     box-shadow: 0 20px 20px rgb(0 0 0);
     border: none;
     opacity: 1;
     transition: 0.4s;
 }
 
-.img img {
+.Card img {
     border-radius: 50%;
 
 }
@@ -61,13 +61,17 @@ button {
     outline: none;
     cursor: pointer;
     color: silver;
-    font-size: 16px;
     font-weight: bold;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    padding: 0px;
 }
 
 button:hover {
     color: red;
 }
+
 
 
 .load {
@@ -81,3 +85,13 @@ button:hover {
     color: silver;
     padding: 20px;
 }
+
+.Check-Delete {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 5px;
+
+}
+
+
+
