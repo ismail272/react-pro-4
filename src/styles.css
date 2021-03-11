@@ -79,6 +79,13 @@ button:hover {
     font-size: 30px;
     color: silver;
     font-weight: 600;
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+}
+
+.Loading {
+    align-self: center;
 }
 
 .title {

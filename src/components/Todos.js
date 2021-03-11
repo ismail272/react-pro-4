@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import { loadTodo } from '../redux/action';
 import Todo from './Todo'
+import ReactLoading from "react-loading";
 
 
 function Todos(props) {
@@ -20,7 +21,9 @@ function Todos(props) {
         <div className="imgBlock">
             {loading ?
                 <div className="load">
-                     Loading...
+                    Loading<div className="Loading"><ReactLoading
+                        width="20px"
+                        height="20px"/></div>
                 </div> : (
                     todos.map((todo) => {
                         return (
