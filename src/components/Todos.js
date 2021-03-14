@@ -1,18 +1,21 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import { loadTodo } from '../redux/action';
+import {loadTodo, loadUsers} from '../redux/action';
 import Todo from './Todo'
 import ReactLoading from "react-loading";
 
 
 function Todos(props) {
 
-    const loading = useSelector(state => state.loading);
-    const todos = useSelector(state => state.todos);
+    const loading = useSelector((state) => state.loading);
+    const todos = useSelector((state) => state.todos);
+    const users = useSelector((state) => state.users);
+
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(loadTodo())
+        dispatch(loadUsers())
     }, [])
 
 
@@ -27,7 +30,7 @@ function Todos(props) {
                 </div> : (
                     todos.map((todo) => {
                         return (
-                            <Todo key={todo.id} todo={todo} />
+                            <Todo key={todo.id} todo={todo} users={users} />
 
                         )
                     })

@@ -3,6 +3,7 @@ import Buttons from "./Buttons";
 
 function Todo(props) {
 
+    const user = props.users.filter(item => item.id === props.todo.userId)
 
     return (
            <div className="Card">
@@ -13,6 +14,8 @@ function Todo(props) {
                 <img src={props.todo.thumbnailUrl}  alt="img"/>
             </div>
                <div className="title">{props.todo.title}</div>
+               <div>{user[0].email}</div>
+
            </div>
 
 

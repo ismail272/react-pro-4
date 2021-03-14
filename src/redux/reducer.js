@@ -1,12 +1,20 @@
 const initialState = {
     todos: [],
-    loading: false
+    loading: false,
+    users: [],
+    usersLoading: false
 }
 
 const reducer = ((state = initialState, action) => {
     switch (action.type) {
-        case 'start' : return {loading: true};
-        case 'addTodos' : return {todos: action.load}
+        case 'start' :
+            return {
+                loading: true
+            }
+        case 'addTodos' :
+            return {
+                todos: action.payload,
+            }
 
         case 'delete' :
             return {
@@ -53,6 +61,19 @@ const reducer = ((state = initialState, action) => {
                     }
                     return todo
                 })
+            }
+
+        case 'users/load/start' :
+            return {
+                ...state,
+                usersLoading: true
+            }
+
+        case 'users/load/success' :
+            return {
+                ...state,
+                usersLoading: false,
+                users: action.payload
             }
 
         default: return state
